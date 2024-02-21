@@ -1,5 +1,7 @@
-package learnspringboot.mockito.mockitodemo.business;
+package business;
 
+import learnspringboot.mockito.mockitodemo.business.DataService;
+import learnspringboot.mockito.mockitodemo.business.SomeBusinessImpl;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -23,7 +25,7 @@ public class SomeBusinessImplStubTest {
     }
 }
 
-class DataServiceStub1 implements DataService{
+class DataServiceStub1 implements DataService {
 
     @Override
     public int[] retrieveAllData() {
